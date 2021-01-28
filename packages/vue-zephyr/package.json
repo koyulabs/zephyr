@@ -146,5 +146,6 @@
     "*.css",
     "*.scss"
   ],
-  "unpkg": "dist/vuelib.min.js"
+  "unpkg": "dist/vuelib.min.js",
+  "gitHead": "377573477340d2142061df915ce6855634d37a06"
 }

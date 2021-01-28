@@ -2,6 +2,9 @@
   "name": "@koyu/react-zephyr",
   "version": "0.2.0",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./build/index.js",
   "module": "./build/index.es.js",
   "scripts": {
@@ -65,5 +68,6 @@
   "resolutions": {
     "**/react": "17.0.1",
     "**/react-dom": "17.0.1"
-  }
+  },
+  "gitHead": "377573477340d2142061df915ce6855634d37a06"
 }
