@@ -15,6 +15,9 @@
   "author": "Nate Dunn <hello@natedunn.net>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.8",
     "lerna": "^3.22.1"
   }
 }
