@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.2.2](https://github.com/usezephyr/vue-zephyr/compare/@koyu/vue-zephyr@0.2.1...@koyu/vue-zephyr@0.2.2) (2021-01-28)
+
+**Note:** Version bump only for package @koyu/vue-zephyr
+
+
+
+
+
 # [0.1.0](https://github.com/usezephyr/vue-zephyr/compare/v0.0.2...v0.1.0) (2021-01-19)
 
 
