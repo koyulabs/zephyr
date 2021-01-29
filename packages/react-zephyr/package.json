@@ -1,6 +1,6 @@
 {
   "name": "@koyu/react-zephyr",
-  "version": "0.3.1",
+  "version": "0.4.6",
   "private": false,
   "publishConfig": {
     "access": "public"
