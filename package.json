@@ -1,24 +1,25 @@
 {
   "name": "zephyr",
   "version": "0.1.2",
-  "description": "The themeable component library built for Tailwind developers",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "react": "yarn workspace @koyu/react-zephyr",
-    "vue": "yarn workspace @koyu/vue-zephyr",
-    "build": "yarn workspaces run build"
-  },
-  "main": "index.js",
-  "author": "Nate Dunn <hello@natedunn.net>",
+  "description": "The themeable component library built for Tailwind developers",
   "license": "MIT",
+  "author": "Nate Dunn <hello@natedunn.net>",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "react": "yarn workspace @koyu/react-zephyr",
+    "release": "lerna publish --no-git-tag-version --no-push && release",
+    "vue": "yarn workspace @koyu/vue-zephyr"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "dotenv-cli": "^4.0.0",
     "husky": "^4.3.8",
     "lerna": "^3.22.1"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
