@@ -8,9 +8,9 @@
   "main": "./build/index.js",
   "module": "./build/index.es.js",
   "scripts": {
-    "build": "npm run build:next && npm run build:ui",
-    "build:next": "next build",
-    "build:ui": "rollup -c",
+    "build": "rollup -c",
+    "build:all": "npm run build && npm run build:framework",
+    "build:framework": "next build",
     "dev": "next dev",
     "lint": "eslint --ignore-path .gitignore .",
     "ls": "echo SHELL",

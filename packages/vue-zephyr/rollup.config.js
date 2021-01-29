@@ -60,9 +60,10 @@ const config = {
     }),
   ],
   babel: {
-    exclude: "node_modules/**",
     extensions: [".js", ".jsx", ".vue"],
-    babelHelpers: "runtime"
+    babelHelpers: "runtime",
+    exclude: '**/node_modules/**',
+    plugins: [['@babel/transform-runtime']]
   }
 };
 

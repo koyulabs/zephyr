@@ -27,9 +27,10 @@ export default {
     resolve(),
     typescript(),
     babel({
-      exclude: "node_modules/**",
       extensions: [".js", ".jsx", ".ts", "tsx"],
-      babelHelpers: "runtime"
+      babelHelpers: "runtime",
+      exclude: '**/node_modules/**',
+      plugins: [['@babel/transform-runtime']]
     }),
     commonjs()
   ],

@@ -10,6 +10,7 @@
     "build": "yarn workspaces run build",
     "react": "yarn workspace @koyu/react-zephyr",
     "release": "lerna publish --no-git-tag-version --no-push && release",
+    "theme": "yarn workspace @koyu/zephyr-theme",
     "vue": "yarn workspace @koyu/vue-zephyr"
   },
   "devDependencies": {
