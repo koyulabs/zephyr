@@ -1,0 +1,17 @@
+{
+  "name": "@koyu/zephyr-theme",
+  "version": "0.3.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "The default theme for Zephyr products",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "module": "./build/index.es.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "rollup": "^2.38.1"
+  }
+}
