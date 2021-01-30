@@ -2,6 +2,7 @@
 node_modules
 /dist
 /build
+/.build
 /testumdbuild
 
 # local env files

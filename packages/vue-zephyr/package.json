@@ -9,16 +9,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/usezephyr/vue-zephyr.git"
+    "url": "https://github.com/koyulabs/zephyr.git"
   },
   "author": {
     "name": "Nate Dunn",
     "email": "hello@natedunn.net",
     "url": "https://twitter.com/natedunn"
   },
-  "homepage": "http://usezephyr.com",
-  "main": "build/cjs/index.js",
-  "module": "build/esm/index.js",
+  "homepage": "http://vue.usezephyr.com",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js",
     "build:all": "npm run build && npm run build:framework",
@@ -31,7 +31,7 @@
   "files": [
     "dist",
     "src",
-    "types/*.d.ts"
+    "types.d.ts"
   ],
   "dependencies": {
     "@headlessui/vue": "^0.2.0",

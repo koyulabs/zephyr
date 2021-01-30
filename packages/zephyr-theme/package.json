@@ -6,8 +6,8 @@
   },
   "description": "The default theme for Zephyr products",
   "license": "MIT",
-  "main": "./build/index.js",
-  "module": "./build/index.es.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
   "scripts": {
     "build": "rollup --config",
     "build:all": "yarn build"

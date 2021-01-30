@@ -113,7 +113,7 @@ const mapComponent = name => {
       output: {
         format: "umd",
         name: capitalize(name),
-        file: `build/components/${name}/index.ts`,
+        file: `dist/components/${name}/index.ts`,
         exports: "named",
         globals
       },
@@ -142,7 +142,7 @@ export default [
     external,
     output: {
       format: "esm",
-      dir: "build/esm"
+      dir: "dist/esm"
     },
     plugins: [
       typescript(),
@@ -162,7 +162,7 @@ export default [
     external,
     output: {
       format: "esm",
-      file: "build/vuelib.esm.js"
+      file: "dist/vuelib.esm.js"
     },
     plugins: [
       typescript(),
@@ -182,7 +182,7 @@ export default [
     external,
     output: {
       compact: true,
-      file: "build/vuelib-browser.min.js",
+      file: "dist/vuelib-browser.min.js",
       format: "iife",
       name: "vuelib",
       exports: "named",
@@ -212,7 +212,7 @@ export default [
     output: {
       compact: true,
       format: "cjs",
-      dir: "build/cjs",
+      dir: "dist/cjs",
       exports: "named",
       globals
     },
