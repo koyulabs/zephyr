@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import "@twind/macro";
 import Link from "next/link";
 import Logo from "@public/simple-logo.svg";
-import useDarkMode from "@/src/utils/darkMode";
+import useDarkMode from "@utils/darkMode";
 
 interface Props {}
 
