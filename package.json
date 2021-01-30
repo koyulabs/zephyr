@@ -8,8 +8,10 @@
   "main": "index.js",
   "scripts": {
     "build": "yarn workspaces run build",
+    "build:all": "yarn workspaces run build:all",
     "react": "yarn workspace @koyu/react-zephyr",
     "release": "lerna publish && release",
+    "ship": "yarn build:all && yarn release",
     "theme": "yarn workspace @koyu/zephyr-theme",
     "vue": "yarn workspace @koyu/vue-zephyr"
   },
