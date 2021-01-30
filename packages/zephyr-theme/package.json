@@ -9,7 +9,8 @@
   "main": "./build/index.js",
   "module": "./build/index.es.js",
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "build:all": "yarn build"
   },
   "devDependencies": {
     "rollup": "^2.38.1"
