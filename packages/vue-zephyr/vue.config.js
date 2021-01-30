@@ -2,8 +2,7 @@ const addVueRawPreLoader = require("vue-raw-pre");
 const path = require("path");
 
 module.exports = {
-  // productionTip: false,
-  outputDir: path.resolve(__dirname, "build"),
+  outputDir: path.resolve(__dirname, "build/framework"),
   pluginOptions: {
     webpackBundleAnalyzer: {
       openAnalyzer: false

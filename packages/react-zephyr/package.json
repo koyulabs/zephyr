@@ -5,6 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "main": "./build/index.js",
   "module": "./build/index.es.js",
   "scripts": {
@@ -21,6 +22,7 @@
   },
   "files": [
     "build",
+    "index.d.ts",
     "next-env.d.ts",
     "src"
   ],
@@ -69,5 +71,6 @@
     "**/react": "17.0.1",
     "**/react-dom": "17.0.1"
   },
+  "types": "index.d.ts",
   "gitHead": "377573477340d2142061df915ce6855634d37a06"
 }

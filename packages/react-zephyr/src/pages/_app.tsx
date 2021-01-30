@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/src/assets/styles/global.css";
 import { setup } from "twind";
 import { ZephyrProvider } from "@utils/context";
 

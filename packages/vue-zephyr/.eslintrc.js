@@ -7,8 +7,6 @@ module.exports = {
     "plugin:vue/vue3-essential",
     "eslint:recommended",
     "@vue/typescript/recommended",
-    // "@vue/prettier",
-    // "@vue/prettier/@typescript-eslint",
   ],
   parserOptions: {
     parser: "@typescript-eslint/parser",
@@ -31,4 +29,18 @@ module.exports = {
       },
     },
   ],
+  ignorePatterns: [
+    "build/",
+    "node_modules/",
+    "src/shims-tsx.d.ts",
+    "src/shims-vue.d.ts",
+    "*.config.js",
+    "src/main.ts",
+    "test/",
+    "dist/*.hot-update.json",
+    "dist/index.html",
+    "dist/webpack-stats.json",
+    "*.d.ts",
+    "testumdbuild",
+  ]
 };

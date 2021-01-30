@@ -17,12 +17,12 @@
     "url": "https://twitter.com/natedunn"
   },
   "homepage": "http://usezephyr.com",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js",
     "build:all": "npm run build && npm run build:framework",
-    "build:framework": "vue-cli-service build && npm run build:js",
+    "build:framework": "vue-cli-service build",
     "cz": "git-cz",
     "lint": "vue-cli-service lint",
     "release": "dotenv release-it",
@@ -122,7 +122,7 @@
     "vue-cli-plugin-webpack-bundle-analyzer": "^2.0.0",
     "vue-raw-pre": "^1.0.5"
   },
-  "types": "types/index.d.ts",
+  "types": "index.d.ts",
   "browserslist": [
     "> 1%",
     "last 2 versions",
