@@ -372,22 +372,22 @@
 import { computed, defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
 import { tw } from "twind";
-import { darkMode } from "@/utils/darkMode";
-import { locale } from "@/views/utils/locale";
-import { toTitleCase } from "@/views/utils/stringMods";
-import DocHeader from "@/views/components/DocHeader.vue";
-import Badge from "@/views/components/Badge.vue";
-import Theme from "@/components/Dropdown/theme.ts";
-import A from "@/views/components/A.vue";
+import { darkMode } from "@utils/darkMode";
+import { locale } from "@utils/locale";
+import { toTitleCase } from "@utils/stringMods";
+import DocHeader from "@components-local/DocHeader.vue";
+import Badge from "@components-local/Badge.vue";
+import A from "@components-local/A.vue";
+import Example from "@components-local/Example.vue";
+import Code from "@components-local/Code.vue";
+import CodeBlock from "@components-local/CodeBlock.vue";
+import Theme from "@components/Dropdown/theme.ts";
 import {
   Dropdown,
   DropdownButton,
   DropdownItems,
   DropdownItem,
-} from "@/components/Dropdown/Dropdown.vue";
-import Example from "@/views/components/Example.vue";
-import Code from "@/views/components/Code.vue";
-import CodeBlock from "@/views/components/CodeBlock.vue";
+} from "@components/Dropdown/Dropdown.vue";
 
 export default defineComponent({
   components: {

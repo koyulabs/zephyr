@@ -5,12 +5,12 @@
         <img
           v-if="isDark"
           :class="tw`mx-auto select-none pointer-events-none `"
-          src="@/assets/images/header-logo-dark.png"
+          src="@assets/images/header-logo-dark.png"
         />
         <img
           v-else
           :class="tw`mx-auto select-none pointer-events-none`"
-          src="@/assets/images/header-logo-light.png"
+          src="@assets/images/header-logo-light.png"
         />
       </div>
       <h1
@@ -276,7 +276,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { tw } from "twind";
-import Link from "@/views/components/Link.vue";
+import Link from "@components-local/Link.vue";
 import { Classy } from "@/utils/helpers";
 import { isDark } from "@/utils/darkMode";
 

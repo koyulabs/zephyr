@@ -1,8 +1,8 @@
 import { ref } from "vue";
 import { createI18n } from "vue-i18n";
-import en from "@/views/locales/en";
-import es from "@/views/locales/es";
-import zhCN from "@/views/locales/zh-CN";
+import en from "@/locales/en";
+import es from "@/locales/es";
+import zhCN from "@/locales/zh-CN";
 
 // Set default lang
 const locale = ref("en");

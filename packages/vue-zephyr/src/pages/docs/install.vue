@@ -119,11 +119,11 @@
 <script lang="ts">
 /* eslint-disable no-useless-escape */
 import { defineComponent } from "vue";
-import DocHeader from "@/views/components/DocHeader.vue";
-import Badge from "@/views/components/Badge.vue";
-import Code from "@/views/components/Code.vue";
-import CodeBlock from "@/views/components/CodeBlock.vue";
 import { tw } from "twind";
+import DocHeader from "@components-local/DocHeader.vue";
+import Badge from "@components-local/Badge.vue";
+import Code from "@components-local/Code.vue";
+import CodeBlock from "@components-local/CodeBlock.vue";
 
 export default defineComponent({
   components: {

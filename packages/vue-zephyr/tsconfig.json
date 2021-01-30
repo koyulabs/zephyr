@@ -17,8 +17,29 @@
     ],
     "paths": {
       "@/*": [
-        "src/*"
-      ]
+        "./src/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@components-local/*": [
+        "src/components-local/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
     },
     "lib": [
       "esnext",
@@ -34,8 +55,8 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "src/views/locales/zh-CN.ts",
-    "src/views/locales/en.ts",
+    "src/pages/locales/zh-CN.ts",
+    "src/pages/locales/en.ts",
     "src/router/index.js"
   ],
   "exclude": [

@@ -22,7 +22,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { tw } from "twind";
-import Blockquote from "@/views/components/Blockquote.vue";
+import Blockquote from "@components-local/Blockquote.vue";
 
 export default defineComponent({
   components: {

@@ -21,10 +21,10 @@
 
 <script lang="ts">
 import { defineComponent, onMounted } from "vue";
-import { tw } from "twind";
-import Badge from "@/views/components/Badge.vue";
-import DocHeader from "@/views/components/DocHeader.vue";
 import { useRouter } from "vue-router";
+import { tw } from "twind";
+import Badge from "@components-local/Badge.vue";
+import DocHeader from "@components-local/DocHeader.vue";
 
 export default defineComponent({
   components: {

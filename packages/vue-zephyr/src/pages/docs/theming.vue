@@ -38,9 +38,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import DocHeader from "@/views/components/DocHeader.vue";
-import Badge from "@/views/components/Badge.vue";
 import { tw } from "twind";
+import DocHeader from "@components-local/DocHeader.vue";
+import Badge from "@components-local/Badge.vue";
 
 export default defineComponent({
   components: {

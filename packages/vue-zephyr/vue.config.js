@@ -9,8 +9,8 @@ module.exports = {
     },
     autoRouting: {
       chunkNamePrefix: 'page-',
-      importPrefix: "@/views/pages/",
-      pages: "src/views/pages",
+      importPrefix: "@/pages/",
+      pages: "src/pages",
       nested: true,
     }
   },

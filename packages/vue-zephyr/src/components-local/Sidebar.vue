@@ -87,8 +87,8 @@
 import { computed, defineComponent, ref, watch } from "vue";
 import { tw } from "twind";
 import router from "@/router/index.ts";
-import SidebarWrapper from "@/views/components/SidebarWrapper.vue";
-import SidebarLink from "@/views/components/SidebarLink.vue";
+import SidebarWrapper from "@components-local/SidebarWrapper.vue";
+import SidebarLink from "@components-local/SidebarLink.vue";
 
 export default defineComponent({
   components: {

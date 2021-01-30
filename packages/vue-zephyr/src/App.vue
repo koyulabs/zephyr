@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import "./views/assets/style.css";
+import "@assets/styles/style.css";
 import { defineComponent } from "vue";
 
 export default defineComponent({

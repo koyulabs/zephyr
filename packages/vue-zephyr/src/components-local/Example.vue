@@ -12,7 +12,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import { tw } from "twind";
-import CodeBlock from "@/views/components/CodeBlock.vue";
+import CodeBlock from "@components-local/CodeBlock.vue";
 
 export default defineComponent({
   components: {

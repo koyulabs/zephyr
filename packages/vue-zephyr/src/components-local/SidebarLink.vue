@@ -15,7 +15,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import { tw } from "twind";
-import Link from "@/views/components/Link.vue";
+import Link from "@components-local/Link.vue";
 import router from "@/router/index.ts";
 
 export default defineComponent({

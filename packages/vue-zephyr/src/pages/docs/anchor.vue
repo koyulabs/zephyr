@@ -172,15 +172,15 @@
 import { computed, defineComponent } from "vue";
 import { tw } from "twind";
 import { useI18n } from "vue-i18n";
-import { toTitleCase } from "@/views/utils/stringMods";
-import DocHeader from "@/views/components/DocHeader.vue";
-import Badge from "@/views/components/Badge.vue";
-import Divider from "@/views/components/Divider.vue";
-import Example from "@/views/components/Example.vue";
-import Code from "@/views/components/Code.vue";
-import CodeBlock from "@/views/components/CodeBlock.vue";
-import Anchor from "@/components/Anchor/Anchor.vue";
-import Theme from "@/components/Anchor/theme.ts";
+import { toTitleCase } from "@utils/stringMods";
+import DocHeader from "@components-local/DocHeader.vue";
+import Badge from "@components-local/Badge.vue";
+import Divider from "@components-local/Divider.vue";
+import Example from "@components-local/Example.vue";
+import Code from "@components-local/Code.vue";
+import CodeBlock from "@components-local/CodeBlock.vue";
+import Anchor from "@components/Anchor/Anchor.vue";
+import Theme from "@components/Anchor/theme.ts";
 
 export default defineComponent({
   components: {

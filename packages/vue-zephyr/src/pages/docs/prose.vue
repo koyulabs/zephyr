@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import DocHeader from "@/views/components/DocHeader.vue";
+import DocHeader from "@components-local/DocHeader.vue";
 
 export default defineComponent({
   components: {

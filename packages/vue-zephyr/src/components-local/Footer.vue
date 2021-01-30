@@ -84,17 +84,17 @@
   </footer>
 </template>
 
-<script lang="ts`">
+<script lang="ts">
 import { defineComponent } from "vue";
-import {tw} from "twind";
-import Link from "@/views/components/Link.vue";
+import { tw } from "twind";
+import Link from "@components-local/Link.vue";
 
 export default defineComponent({
   components: {
-    Link
+    Link,
   },
   setup() {
-    return {tw};
+    return { tw };
   },
 });
 </script>

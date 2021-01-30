@@ -24,12 +24,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { tw } from "twind";
-import { isDark } from "@/utils/darkMode";
-import BaseLayout from "@/views/layouts/_base.vue";
-import MainNav from "@/views/components/MainNav.vue";
-import Footer from "@/views/components/Footer.vue";
-import Container from "@/views/components/Container.vue";
-import Sidebar from "@/views/components/Sidebar.vue";
+import { isDark } from "@utils/darkMode";
+import BaseLayout from "@layouts/_base.vue";
+import MainNav from "@components-local/MainNav.vue";
+import Footer from "@components-local/Footer.vue";
+import Container from "@components-local/Container.vue";
+import Sidebar from "@components-local/Sidebar.vue";
 
 export default defineComponent({
   components: {

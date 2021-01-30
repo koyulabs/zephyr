@@ -5,7 +5,6 @@ import App from "./App.vue";
 // Twind
 import { setup, silent } from 'twind';
 import typography from '@twind/typography'
-import '@/views/assets/style.css'
 
 // Components
 import Button from "@/components/Button/Button.vue";
@@ -14,11 +13,11 @@ import Table, { TableWrapper, Thead, Tbody, Tr, Th, Td } from "@/components/Tabl
 import Anchor from "@/components/Anchor/Anchor.vue";
 
 // Router
-import VueRouterLayout from 'vue-router-layout'
 import router from './router'
+import VueRouterLayout from 'vue-router-layout'
 
 // i18n
-import {checkLocale, i18n} from "@/views/utils/locale";
+import {checkLocale, i18n} from "@/utils/locale";
 
 // Zephyrs External Theme
 import theme from './testTheme';

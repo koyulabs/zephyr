@@ -26,7 +26,7 @@
 <script lang="ts">
 import { computed, defineComponent, inject } from "vue";
 import { classAppend, classRemove, variant } from "@/props";
-import { Classy } from "@/utils/helpers";
+import { Classy } from "@utils/helpers";
 import Theme from "./theme";
 
 export default defineComponent({

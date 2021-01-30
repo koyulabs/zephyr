@@ -4,7 +4,7 @@ import { createRouterLayout } from "vue-router-layout";
 // import generatedRoutes from "./routes";
 
 const RouterLayout = createRouterLayout(layout => {
-  return import("@/views/layouts/" + layout + ".vue");
+  return import("@/layouts/" + layout + ".vue");
 });
 
 const router = createRouter({

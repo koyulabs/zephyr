@@ -4,7 +4,7 @@
       <router-link :class="tw`mr-2 flex items-center`" to="/">
         <img
           :class="[tw`w-9 p-2.5`, classes.options.item]"
-          src="@/views/assets/images/logo-detailed.svg"
+          src="@assets/images/logo-detailed.svg"
           alt="Vue Zephyrs"
         />
         <span :class="tw`inline-block md:hidden mt-0.5 ml-3 font-bold text-lg`"
@@ -85,10 +85,10 @@
 <script lang="ts">
 import { defineComponent, computed, ref } from "vue";
 import { tw } from "twind";
-import { toTitleCase } from "@/views/utils/stringMods";
-import { locale, updateLocale } from "@/views/utils/locale";
-import LightSwitch from "@/views/components/LightSwitch.vue";
-import Link from "@/views/components/Link.vue";
+import { toTitleCase } from "@utils/stringMods";
+import { locale, updateLocale } from "@utils/locale";
+import LightSwitch from "@components-local/LightSwitch.vue";
+import Link from "@components-local/Link.vue";
 
 export default defineComponent({
   components: {
