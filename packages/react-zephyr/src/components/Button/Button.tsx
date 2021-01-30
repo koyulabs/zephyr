@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode, useContext } from "react";
-import { Classy } from "@/src/utils/helpers";
+import { Classy } from "@utils/helpers";
 import Theme from "./Button.theme";
 import { ZephyrContext } from "@utils/context";
 
@@ -11,8 +11,8 @@ export default function Button({
   size = "md" as string,
   status = null as string | null,
 }): ReactElement {
-  let theme = Theme(useContext(ZephyrContext));
-  let classes = new Classy()
+  const theme = Theme(useContext(ZephyrContext));
+  const classes = new Classy()
     .append(theme[status ?? variant])
     .append(theme.size[size])
     .append(classAppend)
