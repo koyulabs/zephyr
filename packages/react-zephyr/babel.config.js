@@ -13,24 +13,15 @@ module.exports = {
           "./"
         ],
         "alias": {
+          "@": "./src",
+          "@assets": "./src/assets",
           "@components": "./src/components",
           "@components-local": "./src/components-local",
-          "@api": "./src/api",
-          "@models": "./src/models",
-          "@screens": "./src/screens",
-          "@hooks": "./src/hooks",
-          "@services": "./src/services",
-          "@constants": "./src/constants",
-          "@context": "./src/context",
-          "@queries": "./src/queries",
-          "@data": "./src/data",
-          "@typeDefs": "./src/types",
-          "@generated": "./src/generated",
-          "@utils": "./src/utils",
-          "@public": "./public",
-          "@views": "./src/views",
           "@layouts": "./src/layouts",
-          "@": "./"
+          "@locales": "./src/locales",
+          "@pages": "./src/pages",
+          "@public": "./public",
+          "@utils": "./src/utils",
         }
       }
     ]
