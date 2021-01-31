@@ -21,7 +21,7 @@
   "scripts": {
     "build": "rollup -c",
     "build:all": "npm run build && npm run build:framework",
-    "build:framework": "next build && next export",
+    "build:framework": "yarn mkdirp out && next build && next export",
     "dev": "next dev",
     "lint": "eslint --ignore-path .gitignore .",
     "setup": "npm install && npm run validate",
