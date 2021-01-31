@@ -5,4 +5,5 @@ module.exports = {
   //   locales: ['en', 'zh-CH', 'es'],
   //   defaultLocale: 'en',
   // },
+  target: "serverless",
 }
