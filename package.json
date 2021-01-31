@@ -9,6 +9,7 @@
   "scripts": {
     "build": "yarn workspaces run build",
     "build:all": "yarn workspaces run build:all",
+    "build:next": "yarn react build:framework && sh netlify-next.sh",
     "react": "yarn workspace @koyu/react-zephyr",
     "release": "lerna publish && release",
     "ship": "yarn build:all && yarn release",
