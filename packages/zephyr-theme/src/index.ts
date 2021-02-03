@@ -1,3 +1,11 @@
-export default function Theme(config: unknown): boolean {
-  return true;
+import Button from './button';
+
+export default function DefaultTheme(config: unknown): unknown {
+  return {
+    Button: Button(config)
+  };
 }
+
+export {
+  Button
+};

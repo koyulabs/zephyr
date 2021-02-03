@@ -14,5 +14,6 @@
   },
   "devDependencies": {
     "rollup": "^2.38.1"
-  }
+  },
+  "types": "types.d.ts"
 }
