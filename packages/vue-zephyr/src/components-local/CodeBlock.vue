@@ -19,11 +19,8 @@ import PrismJs from "prismjs";
 import "prismjs/components/prism-json";
 import "prismjs/components/prism-bash";
 import "prismjs/plugins/line-numbers/prism-line-numbers.js";
+import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
 import Prism from "vue-prism-component";
-import { format } from "prettier/standalone";
-import parserHTML from "prettier/parser-html";
-import parserBabel from "prettier/parser-babel";
-import prettierPluginPackage from "prettier-plugin-package";
 
 export default defineComponent({
   components: {
@@ -46,31 +43,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const prettierConfigs: any = {
-      html: {
-        parser: "html",
-        plugins: [parserHTML],
-      },
-      js: {
-        parser: "babel",
-        plugins: [parserBabel],
-      },
-      vue: {
-        parser: "vue",
-        plugins: [parserHTML],
-      },
-      json: {
-        parser: "json-stringify",
-        plugins: [prettierPluginPackage],
-      },
-    };
-    const prettierConfig = prettierConfigs?.[props.lang] ?? false;
-    const formattedCode = computed(() =>
-      prettierConfig
-        ? format(Strip(props.code), prettierConfig)
-        : Strip(props.code)
-    );
+    const formattedCode = computed(() => Strip(props.code));
     onMounted(() => {
       PrismJs.highlightAll();
     });

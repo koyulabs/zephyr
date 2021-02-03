@@ -11,6 +11,7 @@ declare module 'prettier/standalone';
 declare module 'prettier/parser-html';
 declare module 'prettier/parser-json';
 declare module 'prettier-plugin-package';
+declare module 'prismjs/plugins/normalize-whitespace';
 declare module 'prismjs';
 declare module '@/views/locales/zh-CN.js';
 declare module '@/views/locales/en.js';
