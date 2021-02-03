@@ -1,11 +1,11 @@
-import { ReactElement, useContext } from "react";
+import { ReactElement } from "react";
 import "@twind/macro";
 import Link from "next/link";
 import DefaultLayout from "@layouts/Default";
 import DocHeader from "@components-local/DocHeader";
 import Button from "@components/Button/Button";
 import { Section1 } from "@components-local/Section";
-import { H3 } from "@components-local/Heading";
+import { H3, H4 } from "@components-local/Heading";
 import Divider from "@components-local/Divider";
 import Blockquote from "@components-local/Blockquote";
 
@@ -26,16 +26,10 @@ export default function button(): ReactElement {
       </Blockquote>
       <div tw="h-16"></div>
       <Section1>
-        <div>
-          <H3>Usage</H3>
-          <Divider></Divider>
-          <Button status="disabled">Testing</Button>
-        </div>
-        <div>
-          <Button variant="indigo" size="xl">
-            Testing
-          </Button>
-        </div>
+        <H3>Usage</H3>
+        <Divider></Divider>
+        <H4>Variants</H4>
+        <Button>Click Me</Button>
       </Section1>
     </DefaultLayout>
   );
