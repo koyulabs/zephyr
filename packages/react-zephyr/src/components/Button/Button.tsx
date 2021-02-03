@@ -1,16 +1,25 @@
 import { ReactElement, ReactNode, useContext } from "react";
 import { Classy } from "@utils/helpers";
-import Theme from "./Button.theme";
+import { Button as Theme } from "@koyu/zephyr-theme";
 import { ZephyrContext } from "@utils/context";
 
+interface ButtonProps {
+  children: ReactNode;
+  classAppend?: Classes;
+  classRemove?: Classes;
+  variant?: Variant;
+  size?: string;
+  status?: string;
+}
+
 export default function Button({
-  children = null as ReactNode,
-  classAppend = "" as Classes,
-  classRemove = "" as Classes,
-  variant = "primary" as Variant,
-  size = "md" as string,
-  status = null as string | null,
-}): ReactElement {
+  children,
+  classAppend = "",
+  classRemove = "",
+  variant = "primary",
+  size = "md",
+  status,
+}: ButtonProps): ReactElement {
   const theme = Theme(useContext(ZephyrContext));
   const classes = new Classy()
     .append(theme[status ?? variant])
@@ -19,6 +28,9 @@ export default function Button({
     .remove(classRemove)
     .twind()
     .val();
-
-  return <button className={classes}>{children}</button>;
+  return (
+    <button className={classes} disabled={status === "disabled"}>
+      {children}
+    </button>
+  );
 }
