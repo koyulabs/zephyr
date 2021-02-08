@@ -1,6 +1,6 @@
 <template>
   <main :class="tw`h-full flex(& col) relative`">
-    <div :class="tw`mt-6`">
+    <div :class="tw`bg-green-600 text-white py-6`">
       <Container>
         <MainNav />
       </Container>

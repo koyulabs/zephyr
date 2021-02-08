@@ -1,24 +1,12 @@
 <template>
-  <img
-    v-if="isDark"
-    :class="tw`absolute w-full top-0 right-0 left-0`"
-    src="@/assets/images/gradient-top-dark.png"
-  />
-  <img
-    v-else
-    :class="tw`absolute w-full top-0 right-0 left-0`"
-    src="@/assets/images/gradient-top-light.png"
-  />
   <main :class="tw`h-full flex(& col) relative`">
-    <div :class="tw`mt-6`">
+    <div :class="tw`bg-green-600 text-white py-6`">
       <Container>
         <MainNav />
       </Container>
     </div>
-    <div :class="tw`mt-8 layout`">
-      <Container>
-        <BaseLayout />
-      </Container>
+    <div :class="tw`layout`">
+      <BaseLayout />
     </div>
     <Footer :class="tw`mt-auto`" />
   </main>
