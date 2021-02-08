@@ -7,7 +7,10 @@ module.exports = {
     "plugin:vue/vue3-essential",
     "eslint:recommended",
     "@vue/typescript/recommended",
+    "prettier/vue",
+    "plugin:prettier/recommended",
   ],
+  plugins: ["prettier"],
   parserOptions: {
     parser: "@typescript-eslint/parser",
     ecmaVersion: 2020,
@@ -16,7 +19,8 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "vue/require-component-is": "off",
-    'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }]
+    "vue/no-parsing-error": [2, { "x-invalid-end-tag": false }],
+    "vue/no-unused-components": "warn",
   },
   overrides: [
     {
@@ -42,5 +46,5 @@ module.exports = {
     "dist/webpack-stats.json",
     "*.d.ts",
     "testumdbuild",
-  ]
+  ],
 };
