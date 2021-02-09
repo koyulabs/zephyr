@@ -1,10 +1,11 @@
+import { ReactElement } from "react";
 import "@twind/macro";
 import Link from "next/link";
 import Head from "@components-local/Head";
 import Container from "@components-local/Container";
 import MainNav from "@components-local/MainNav";
 
-export default function Home() {
+export default function Home(): ReactElement {
   return (
     <div>
       <Head>
