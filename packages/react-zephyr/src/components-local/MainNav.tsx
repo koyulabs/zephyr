@@ -4,9 +4,7 @@ import Link from "next/link";
 import Logo from "@public/simple-logo.svg";
 import useDarkMode from "@utils/darkMode";
 
-interface Props {}
-
-export default function MainNav({}: Props): ReactElement {
+export default function MainNav(): ReactElement {
   const { darkMode, setDarkMode } = useDarkMode();
   return (
     <nav tw="flex items-center">

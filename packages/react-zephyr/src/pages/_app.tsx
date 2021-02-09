@@ -1,4 +1,6 @@
-import "@assets/styles/global.css";
+import "@assets/styles/style.css";
+import "@assets/styles/prism-dark.css";
+import "@assets/styles/prism-light.css";
 import { setup } from "twind";
 import { ZephyrProvider } from "@utils/context";
 
