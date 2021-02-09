@@ -37,7 +37,7 @@ export default defineComponent({
       props.status && props.status !== false
         ? props.status
         : inject("status", false);
-    const theme: any = inject("theme"); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const theme: any = inject("theme");
     const resolvedVariant = props.variant ?? inject("variant", "DEFAULT");
     const variantClasses = theme?.[resolvedVariant].DropdownButton ?? "";
     const statusClasses =

@@ -2,7 +2,6 @@ import merge from "lodash.merge";
 
 const anchorBase = 'inline-flex space-x-1 focus:ring-2 rounded-sm ring-opacity-50 outline-none';
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
 const Theme = (userTheme?: any): any => {
   return merge(
     {

@@ -31,7 +31,7 @@ export default defineComponent({
     ...status(),
   },
   setup(props) {
-    const theme: any = inject("theme"); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const theme: any = inject("theme");
     const status = inject("status");
     const align = inject("align", "left");
     const resolvedVariant = props.variant ?? inject("variant", "DEFAULT");

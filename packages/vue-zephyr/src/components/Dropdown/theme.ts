@@ -6,7 +6,6 @@ const dropDownBase = {
   DropdownItems: "absolute z-10 w-56 mt-2 overflow-hidden bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none",
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
 const Theme = (userTheme?: any): any => {
   return merge(
     {

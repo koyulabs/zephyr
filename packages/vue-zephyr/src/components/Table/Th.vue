@@ -18,7 +18,7 @@ export default defineComponent({
     }),
   },
   setup(props) {
-    const theme: any = inject("theme"); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const theme: any = inject("theme");
     const resolvedVariant = props.variant ?? inject("variant", "primary");
     const variantClasses = theme?.[resolvedVariant].Th ?? "";
 

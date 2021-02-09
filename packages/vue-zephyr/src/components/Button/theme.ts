@@ -3,7 +3,6 @@ import merge from "lodash.merge";
 const buttonDefault =
   "inline-flex items-center border-2 font-medium rounded-md leading-6 focus:relative focus:z-20 focus:ring-opacity-60 focus:outline-none focus:ring-2 focus:ring-offset-2";
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
 const Theme = (userTheme?: any): any => {
   return merge(
     {

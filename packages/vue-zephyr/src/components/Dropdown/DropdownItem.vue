@@ -1,9 +1,5 @@
 <template>
-  <HMenuItem
-    v-slot="{ active }"
-    as="template"
-    :disabled="status === 'disabled'"
-  >
+  <HMenuItem v-slot="{ active }" as="template" :disabled="status === 'disabled'">
     <HtmlElement
       v-if="typeof as === 'string'"
       :el="as"
@@ -72,7 +68,7 @@ export default defineComponent({
   },
   setup(props) {
     const twindEnable = inject("twindEnable", true);
-    const theme: any = inject("theme"); // eslint-disable-line @typescript-eslint/no-explicit-any
+    const theme: any = inject("theme");
     const resolvedVariant = props.variant ?? inject("variant", "DEFAULT");
     const variantClasses =
       theme?.[resolvedVariant].DropdownItem ??
