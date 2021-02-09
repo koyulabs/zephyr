@@ -3,17 +3,49 @@ import { tw } from "twind";
 import Link from "next/link";
 import DefaultLayout from "@layouts/Default";
 import DocHeader from "@components-local/DocHeader";
-// import Button from "@components/Button/Button";
+import Button from "@components/Button/Button";
 import { Group, Subgroup } from "@components-local/Group";
 import { H3, H4 } from "@components-local/Heading";
 import Divider from "@components-local/Divider";
 import Blockquote from "@components-local/Blockquote";
 import CodeBlock from "@components-local/CodeBlock";
+import Example from "@components-local/Example";
 
 export default function button(): ReactElement {
   const title = "Button";
   const codes = {
-    install: `import { Button } from "@usezephr/vue-zephyr";`,
+    install: `import { Button } from "@usezephyr/react-zephyr";`,
+    variant: `
+      <Button>Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="outline">Outline</Button>
+      <Button variant="success">Success</Button>
+      <Button variant="danger">Danger</Button>
+      <Button variant="warn">Warn</Button>
+    `,
+    size: `
+      <Button size="xs">Extra Small</Button>
+      <Button size="sm">Small</Button>
+      <Button>Medium</Button>
+      <Button size="lg">Large</Button>
+      <Button size="xl">Extra Large</Button>
+    `,
+    lightSwitch: `
+      <Button @click="toggleScheme">
+        Turn {{ isDark ? "ON" : "OFF" }} the lights
+      </Button>
+    `,
+    buttonGroup: `
+      <Button variant="success" classRemove="rounded-md" classAppend="rounded-l-md">
+        Left Side
+      </Button>
+      <Button variant="warn" classRemove="rounded-md">
+        Center
+      </Button>
+      <Button variant="danger" classRemove="rounded-md" classAppend="rounded-r-md">
+        Right
+      </Button>
+    `,
   };
   return (
     <DefaultLayout title={title}>
@@ -29,7 +61,7 @@ export default function button(): ReactElement {
         documentation to distinguish any differences.
       </Blockquote>
       <div className={tw`h-16`}></div>
-      <div className="tw`space-y-12 mb-20`">
+      <div className={tw`space-y-12 mb-20`}>
         <Group>
           <>
             <Subgroup>
@@ -51,20 +83,18 @@ export default function button(): ReactElement {
               <H3>Usage</H3>
               <Divider />
               <H4>Variants</H4>
-              {/* <Example lang="vue" code={codes.variant}>
+              <Example lang="vue" code={codes.variant}>
                 <div
-                  className="
-                    tw`flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row items-center)`
-                  "
+                  className={tw`flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row items-center)`}
                 >
-                  <ZButton>Primary</ZButton>
-                  <ZButton variant="secondary">Secondary</ZButton>
-                  <ZButton variant="outline">Outline</ZButton>
-                  <ZButton variant="success">Success</ZButton>
-                  <ZButton variant="danger">Danger</ZButton>
-                  <ZButton variant="warn">Warn</ZButton>
+                  <Button>Primary</Button>
+                  <Button variant="secondary">Secondary</Button>
+                  <Button variant="outline">Outline</Button>
+                  <Button variant="success">Success</Button>
+                  <Button variant="danger">Danger</Button>
+                  <Button variant="warn">Warn</Button>
                 </div>
-              </Example> */}
+              </Example>
             </>
           </Subgroup>
         </Group>

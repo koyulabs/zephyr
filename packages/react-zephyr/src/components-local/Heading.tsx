@@ -15,7 +15,7 @@ export const H3 = ({ children }: Props): ReactElement => {
 
 export const H4 = ({ children }: Props): ReactElement => {
   return (
-    <h4 tw="font-medium text-gray-900 dark:text-gray-100 text-2xl">
+    <h4 tw="font-medium text-gray-900 dark:text-gray-100 text-xl">
       {children}
     </h4>
   );
