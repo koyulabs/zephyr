@@ -15,12 +15,13 @@ module.exports = {
     }
   },
   chainWebpack: (config) => {
+    // Update title
     addVueRawPreLoader(config);
     config
       .plugin('html')
       .tap(args => {
         args[0].title = 'Vue Zephyr'
         return args
-      })
+      });
   },
 };

@@ -24,10 +24,6 @@ const updateLocale = (newLocale: string): void => {
   i18n.global.locale = newLocale;
 };
 
-// Installation method
-// Interface "I18n" keep throwing an type error.
-// Todo: investigate this further is possible for fix
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const checkLocale = (): void => {
   if (localStorage.getItem("locale") === null) {
     updateLocale("en");

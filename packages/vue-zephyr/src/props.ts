@@ -1,8 +1,8 @@
 interface Prop {
-  type?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-  default?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+  type?: any;
+  default?: any;
   required?: boolean;
-  validator?: (v: any) => boolean; // eslint-disable-line @typescript-eslint/no-explicit-any
+  validator?: (v: any) => boolean;
 }
 
 export const variant = (
@@ -14,8 +14,8 @@ export const variant = (
     variant: {
       type: args && args.type ? args.type : [String],
       default: args && args.default ? args.default : "",
-      required: args && args.required ? args.required : false
-    }
+      required: args && args.required ? args.required : false,
+    },
   };
 };
 
@@ -28,8 +28,8 @@ export const classAppend = (
     classAppend: {
       type: args && args.type ? args.type : [String, Array as () => string[]],
       default: args && args.default ? args.default : "",
-      required: args && args.required ? args.required : false
-    }
+      required: args && args.required ? args.required : false,
+    },
   };
 };
 
@@ -42,8 +42,8 @@ export const classRemove = (
     classRemove: {
       type: args && args.type ? args.type : [String, Array as () => string[]],
       default: args && args.default ? args.default : "",
-      required: args && args.required ? args.required : false
-    }
+      required: args && args.required ? args.required : false,
+    },
   };
 };
 
@@ -56,8 +56,8 @@ export const as = (
     as: {
       type: args && args.type ? args.type : [String, Object],
       default: args && args.default ? args.default : "div",
-      required: args && args.required ? args.required : false
-    }
+      required: args && args.required ? args.required : false,
+    },
   };
 };
 
@@ -71,8 +71,8 @@ export const status = (
       type: args && args.type ? args.type : [String, Boolean],
       default: args && args.default ? args.default : false,
       required: args && args.required ? args.required : false,
-      validator: args && args.validator ? args.validator : () => true
-    }
+      validator: args && args.validator ? args.validator : () => true,
+    },
   };
 };
 
@@ -86,7 +86,7 @@ export const size = (
       type: args && args.type ? args.type : [String],
       default: args && args.default ? args.default : "",
       required: args && args.required ? args.required : false,
-      validator: args && args.validator ? args.validator : () => true
-    }
+      validator: args && args.validator ? args.validator : () => true,
+    },
   };
 };
