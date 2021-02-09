@@ -1,3 +1,3 @@
-# Vue Zephyr from KOYU
+# Vue Zephyr
 
 **The themeable component library built for Tailwind developers.**

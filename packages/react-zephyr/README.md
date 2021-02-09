@@ -1,3 +1,3 @@
-# React Zephyr from KOYU
+# React Zephyr
 
 **The themeable component library built for Tailwind developers.**

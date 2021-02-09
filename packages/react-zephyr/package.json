@@ -1,5 +1,5 @@
 {
-  "name": "@koyu/react-zephyr",
+  "name": "@usezephyr/react-zephyr",
   "version": "0.6.4",
   "private": false,
   "publishConfig": {
@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koyulabs/zephyr.git"
+    "url": "https://github.com/natedunn/zephyr.git"
   },
   "author": {
     "name": "Nate Dunn",

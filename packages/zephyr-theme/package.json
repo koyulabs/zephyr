@@ -1,5 +1,5 @@
 {
-  "name": "@koyu/zephyr-theme",
+  "name": "@usezephyr/zephyr-theme",
   "version": "0.6.4",
   "publishConfig": {
     "access": "public"

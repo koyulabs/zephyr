@@ -10,11 +10,11 @@
     "build": "yarn workspaces run build",
     "build:all": "yarn workspaces run build:all",
     "build:next": "yarn react build:framework && sh netlify-next.sh",
-    "react": "yarn workspace @koyu/react-zephyr",
+    "react": "yarn workspace @usezephyr/react-zephyr",
     "release": "lerna publish && release",
     "ship": "yarn build:all && yarn release",
-    "theme": "yarn workspace @koyu/zephyr-theme",
-    "vue": "yarn workspace @koyu/vue-zephyr"
+    "theme": "yarn workspace @usezephyr/zephyr-theme",
+    "vue": "yarn workspace @usezephyr/vue-zephyr"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
