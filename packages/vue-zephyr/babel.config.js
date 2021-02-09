@@ -5,6 +5,7 @@ module.exports = {
     "@babel/preset-env"
   ],
   plugins: [
+    ["@vue/babel-plugin-jsx"],
     [
       "module-resolver",
       {
