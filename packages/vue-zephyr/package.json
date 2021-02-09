@@ -79,7 +79,7 @@
     "@types/prettier": "^2.1.6",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
-    "@vue/babel-plugin-jsx": "^1.0.0",
+    "@vue/babel-plugin-jsx": "^1.0.2",
     "@vue/cli-plugin-babel": "4.5.0",
     "@vue/cli-plugin-eslint": "4.5.0",
     "@vue/cli-plugin-router": "^4.5.10",
@@ -120,7 +120,9 @@
     "vue-auto-routing": "^1.0.0",
     "vue-cli-plugin-auto-routing": "~1.1.1",
     "vue-cli-plugin-webpack-bundle-analyzer": "^2.0.0",
-    "vue-raw-pre": "^1.0.5"
+    "vue-inline-svg": "^3.0.0-beta.1",
+    "vue-raw-pre": "^1.0.5",
+    "vue-template-compiler": "^2.6.12"
   },
   "types": "index.d.ts",
   "browserslist": [
