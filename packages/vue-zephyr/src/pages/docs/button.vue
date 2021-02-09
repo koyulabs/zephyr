@@ -217,7 +217,7 @@ export default defineComponent({
     const { isDark, toggleScheme } = darkMode();
 
     const codes = {
-      install: `import { Button } from "@usezephr/vue-zephyr";`,
+      install: `import { Button } from "@usezephyr/vue-zephyr";`,
       variant: `
         <Button>Primary</Button>
         <Button variant="secondary">Secondary</Button>
