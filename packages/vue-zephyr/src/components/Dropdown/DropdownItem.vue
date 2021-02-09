@@ -1,5 +1,9 @@
 <template>
-  <HMenuItem v-slot="{ active }" as="template" :disabled="status === 'disabled'">
+  <HMenuItem
+    v-slot="{ active }"
+    as="template"
+    :disabled="status === 'disabled'"
+  >
     <HtmlElement
       v-if="typeof as === 'string'"
       :el="as"

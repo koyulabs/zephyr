@@ -26,10 +26,7 @@
         <div>
           This project is in early development. There still may be significant
           changes in the future, so please use with caution. Follow us on
-          <Anchor
-            variant="primary"
-            href="https://twitter.com/usezephyr"
-            newTab
+          <Anchor variant="primary" href="https://twitter.com/usezephyr" newTab
             >Twitter</Anchor
           >
           for updates.
@@ -84,11 +81,12 @@
           Plugin Options
         </h4>
         <p>
-          When using Zephyr as a plugin you may pass an optional configuration object to make certain global changes. These options get
-          merged into the default config, so you only need to pass the
-          values you would like to add or change.
+          When using Zephyr as a plugin you may pass an optional configuration
+          object to make certain global changes. These options get merged into
+          the default config, so you only need to pass the values you would like
+          to add or change.
         </p>
-        <p>
+        <div>
           There two main sections available in the config:
           <ul :class="tw`list-disc list-inside pl-3 mt-2 leading-7`">
             <li>
@@ -99,15 +97,24 @@
               <Code>twind</Code>
               <ul :class="tw`list-disc list-inside pl-6`">
                 <li>
-                  <Code>enable:</Code> enable or disable Twind (defaults to <Code>true</Code>)
+                  <Code>enable:</Code> enable or disable Twind (defaults to
+                  <Code>true</Code>)
                 </li>
                 <li>
-                  <Code>setup:</Code> pass options to Twind's <Code>setup</Code> function. Please read <Anchor href="https://github.com/tw-in-js/twind/blob/main/docs/setup.md" variant="primary" newTab>Twind's documentation</Anchor> to see what options are available.
+                  <Code>setup:</Code> pass options to Twind's
+                  <Code>setup</Code> function. Please read
+                  <Anchor
+                    href="https://github.com/tw-in-js/twind/blob/main/docs/setup.md"
+                    variant="primary"
+                    newTab
+                    >Twind's documentation</Anchor
+                  >
+                  to see what options are available.
                 </li>
               </ul>
             </li>
           </ul>
-        </p>
+        </div>
         <div :class="tw`rounded-lg overflow-hidden`">
           <CodeBlock lang="js" :code="codes.pluginConfig" />
         </div>

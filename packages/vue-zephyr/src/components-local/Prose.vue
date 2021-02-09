@@ -11,7 +11,7 @@ import { tw } from "twind";
 export default defineComponent({
   setup() {
     return { tw };
-  }
+  },
 });
 </script>
 

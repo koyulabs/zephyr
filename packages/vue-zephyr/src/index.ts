@@ -3,7 +3,7 @@ import * as componentsAsPlugins from "./components/plugins";
 import { setVueInstance } from "./utils/config/index";
 import merge from "lodash.merge";
 import { setup, silent } from "twind";
-import type { Configuration } from 'twind';
+import type { Configuration } from "twind";
 
 // Install
 export default function pluginSetup(

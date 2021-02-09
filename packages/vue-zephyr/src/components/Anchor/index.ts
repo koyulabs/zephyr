@@ -7,7 +7,7 @@ const AnchorPlugin = {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   install: (vue: Application) => {
     registerComponent(vue, Anchor);
-  }
+  },
 };
 
 export default Anchor;

@@ -4,7 +4,7 @@ import {
   Dropdown,
   DropdownButton,
   DropdownItems,
-  DropdownItem
+  DropdownItem,
 } from "./Dropdown";
 import Table from "./Table";
 

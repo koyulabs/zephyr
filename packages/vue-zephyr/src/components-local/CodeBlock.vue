@@ -2,7 +2,7 @@
   <div
     :class="[
       tw`bg-gray-100 dark:bg-gray-800 overflow-auto`,
-      !inline ? tw`line-numbers px-1 py-2` : tw`px-8 py-6`
+      !inline ? tw`line-numbers px-1 py-2` : tw`px-8 py-6`,
     ]"
   >
     <Prism :language="lang === 'vue' ? 'html' : lang" :inline="inline">{{

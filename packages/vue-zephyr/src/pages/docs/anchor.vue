@@ -75,7 +75,7 @@
             <ZAnchor
               :classAppend="{
                 anchor: 'text-3xl text-pink-500 hover:text-pink-700 font-bold',
-                icon: 'w-7'
+                icon: 'w-7',
               }"
               href="https://twitter.com/usezephyr"
               newTab

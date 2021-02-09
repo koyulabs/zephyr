@@ -44,7 +44,7 @@ const setSchemePreference = (): boolean => {
 // All-in-one Method
 const darkMode = (): Mode => {
   onMounted(() => setSchemePreference());
-  watch(isDark, isDark => {
+  watch(isDark, (isDark) => {
     isDark
       ? document.documentElement.classList.add("dark")
       : document.documentElement.classList.remove("dark");
@@ -58,5 +58,5 @@ export {
   setSchemePreference,
   setLight,
   setDark,
-  darkMode
+  darkMode,
 };

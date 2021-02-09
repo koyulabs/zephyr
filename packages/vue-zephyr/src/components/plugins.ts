@@ -1,12 +1,12 @@
-import {AnchorPlugin} from './Anchor';
-import { ButtonPlugin } from './Button';
+import { AnchorPlugin } from "./Anchor";
+import { ButtonPlugin } from "./Button";
 import {
   DropdownPlugin,
   DropdownButtonPlugin,
   DropdownItemsPlugin,
-  DropdownItemPlugin
+  DropdownItemPlugin,
 } from "./Dropdown";
-import {TablePlugin } from "./Table";
+import { TablePlugin } from "./Table";
 
 export {
   AnchorPlugin,
@@ -15,5 +15,5 @@ export {
   DropdownButtonPlugin,
   DropdownItemsPlugin,
   DropdownItemPlugin,
-  TablePlugin
+  TablePlugin,
 };

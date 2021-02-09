@@ -19,7 +19,7 @@
     @click="toggleMenu"
     :class="[
       tw`flex lg:hidden w-full items-center space-x-2 cursor-pointer select-none text(gray-500 dark:gray-300 hover:dark:white hover:green-700) p-4 rounded bg-gray-100 dark:bg-gray-700 hover:(bg(green-100 dark:gray-600 opacity-50 dark:opacity-50))`,
-      menuIsOpen ? tw`relative z-30` : ''
+      menuIsOpen ? tw`relative z-30` : '',
     ]"
   >
     <svg

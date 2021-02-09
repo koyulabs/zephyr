@@ -1,5 +1,10 @@
 import { App as Application } from "vue";
-import {Dropdown, DropdownButton, DropdownItems, DropdownItem } from "./Dropdown.vue";
+import {
+  Dropdown,
+  DropdownButton,
+  DropdownItems,
+  DropdownItem,
+} from "./Dropdown.vue";
 
 import { registerComponent } from "../../utils/plugins/index";
 
@@ -36,5 +41,5 @@ export {
   Dropdown,
   DropdownButton,
   DropdownItems,
-  DropdownItem
+  DropdownItem,
 };

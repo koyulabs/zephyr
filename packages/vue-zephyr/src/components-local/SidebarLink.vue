@@ -3,7 +3,7 @@
     <Link
       :classAppend="[
         classes.BASE,
-        currentRoute.fullPath === to ? classes.active : classes.inactive
+        currentRoute.fullPath === to ? classes.active : classes.inactive,
       ]"
       :to="to"
     >
@@ -42,5 +42,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

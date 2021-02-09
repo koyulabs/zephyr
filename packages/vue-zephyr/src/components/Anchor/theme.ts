@@ -1,6 +1,7 @@
 import merge from "lodash.merge";
 
-const anchorBase = 'inline-flex space-x-1 focus:ring-2 rounded-sm ring-opacity-50 outline-none';
+const anchorBase =
+  "inline-flex space-x-1 focus:ring-2 rounded-sm ring-opacity-50 outline-none";
 
 const Theme = (userTheme?: any): any => {
   return merge(
