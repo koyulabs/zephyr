@@ -1,7 +1,8 @@
 import { ReactElement, ReactNode, useContext } from "react";
 import { Classy } from "@utils/helpers";
-import { Button as Theme } from "@usezephyr/zephyr-theme";
+import { Button as Theme } from "@usezephyr/theme";
 import { ZephyrContext } from "@utils/context";
+
 interface ButtonProps {
   children: ReactNode;
   classAppend?: Classes;

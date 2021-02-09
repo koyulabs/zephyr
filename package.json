@@ -13,7 +13,7 @@
     "react": "yarn workspace @usezephyr/react-zephyr",
     "release": "lerna publish && release",
     "ship": "yarn build:all && yarn release",
-    "theme": "yarn workspace @usezephyr/zephyr-theme",
+    "theme": "yarn workspace @usezephyr/theme",
     "vue": "yarn workspace @usezephyr/vue-zephyr"
   },
   "devDependencies": {
