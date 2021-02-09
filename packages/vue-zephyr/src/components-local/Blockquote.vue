@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts">
-import { Classy } from "@/utils/helpers";
 import { computed, defineComponent } from "vue";
+import { Classy } from "@/utils/helpers";
 
 export default defineComponent({
   setup() {
@@ -19,6 +19,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-</style>

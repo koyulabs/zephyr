@@ -1,128 +1,108 @@
 <template>
   <DocHeader>
-    <template #title> Button </template>
+    <template #title>Button</template>
     <template #subtitle>A basic, all purpose button.</template>
-    <template #right-side>
-      <div :class="tw`justify-end flex items-start md:mt-2 space-x-2`">
-        <Badge classAppend="bg-yellow-500 text-gray-900">In Progress</Badge>
-      </div>
-    </template>
   </DocHeader>
-  <div :class="tw`my-12 space-y-12`">
-    <section>
-      <h3 :class="tw`font-medium text(gray-900 dark:gray-100 3xl)`">Install</h3>
-      <div :class="tw`border(t gray-200 dark:gray-800) my-4`"></div>
-      <div :class="tw`space-y-6`">
-        <p>
-          If you have installed Zephyr as a Vue plugin, you are good to go! You
-          can use the plugin without importing anything since it is available
-          globaly.
-        </p>
-        <p>
-          However you do not wish to use the plugin method, components are
-          available to import directly:
-        </p>
-        <div :class="tw`rounded-lg overflow-hidden`">
-          <CodeBlock lang="vue" :code="codes.install" />
+  <div :class="tw`h-8`"></div>
+  <Blockquote
+    >Under the hood, this component uses the Menu component from Headless UI.
+    The intention is to use the similar APIs, however please be sure to read
+    this documentation to distinguish any differences.</Blockquote
+  >
+  <div :class="tw`h-16`"></div>
+  <div :class="tw`space-y-12 mb-20`">
+    <Group>
+      <Subgroup>
+        <H3>Import</H3>
+        <Divider />
+        <div :class="tw`space-y-6`">
+          <div :class="tw`rounded-lg overflow-hidden`">
+            <CodeBlock lang="js" :code="codes.install" inline />
+          </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <h3 :class="tw`font-medium text(gray-900 dark:gray-100 3xl)`">
-        {{ toTitleCase(t("pages._global.usage", 2)) }}
-      </h3>
-      <Divider />
-      <div :class="tw`space-y-8`">
-        <div :class="tw`space-y-4`">
-          <h4 :class="tw`font-medium text(gray-900 dark:gray-100 xl)`">
-            Variants
-            <span v-if="locale !== 'en'"
-              >({{ toTitleCase(t("pages._global.variant", 2)) }})</span
-            >
-          </h4>
-          <Example lang="vue" :code="codes.variant">
-            <div
-              :class="
-                tw`flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row items-center)`
-              "
-            >
-              <ZButton>Primary</ZButton>
-              <ZButton variant="secondary">Secondary</ZButton>
-              <ZButton variant="outline">Outline</ZButton>
-              <ZButton variant="success">Success</ZButton>
-              <ZButton variant="danger">Danger</ZButton>
-              <ZButton variant="warn">Warn</ZButton>
-            </div>
-          </Example>
-        </div>
-        <div class="space-y-4">
-          <h4 :class="tw`font-medium text(gray-900 dark:gray-100 xl) mt-6`">
-            Sizes
-            <span v-if="locale !== 'en'"
-              >({{ toTitleCase(t("pages._global.size", 2)) }})</span
-            >
-          </h4>
-          <Example lang="vue" :code="codes.size">
-            <div
-              :class="
-                tw`flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row items-center)`
-              "
-            >
-              <ZButton size="xs">Extra Small</ZButton>
-              <ZButton size="sm">Small</ZButton>
-              <ZButton>Medium</ZButton>
-              <ZButton size="lg">Large</ZButton>
-              <ZButton size="xl">Extra Large</ZButton>
-            </div>
-          </Example>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3 :class="tw`font-medium text(gray-900 dark:gray-100 3xl)`">
-        {{ toTitleCase(t("pages._global.example", 2)) }}
-      </h3>
-      <Divider />
-      <div :class="tw`space-y-8`">
-        <div :class="tw`space-y-4`">
-          <h4 :class="tw`font-medium text(gray-900 dark:gray-100 xl)`">
-            Light Switch
-          </h4>
-          <Example lang="vue" :code="codes.lightSwitch">
-            <ZButton @click="toggleScheme">
-              Turn {{ isDark ? "ON" : "OFF" }} the lights
-            </ZButton>
-          </Example>
-        </div>
-        <div :class="tw`space-y-4`">
-          <h4 :class="tw`font-medium text(gray-900 dark:gray-100 xl)`">
-            Button Group
-          </h4>
-          <Example lang="vue" :code="codes.buttonGroup">
-            <ZButton
-              variant="success"
-              classRemove="rounded-md"
-              classAppend="rounded-l-md"
-            >
-              Left Side
-            </ZButton>
-            <ZButton variant="warn" classRemove="rounded-md"> Center </ZButton>
-            <ZButton
-              variant="danger"
-              classRemove="rounded-md"
-              classAppend="rounded-r-md"
-            >
-              Right
-            </ZButton>
-          </Example>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3 :class="tw`font-medium text(gray-900 dark:gray-100 3xl)`">
-        {{ toTitleCase(t("pages._global.props", 2)) }}
-      </h3>
-      <!-- <div :class="tw`border(t gray-200 dark:gray-800) my-4`"></div> -->
+      </Subgroup>
+    </Group>
+    <Group>
+      <Subgroup>
+        <H3>{{ toTitleCase(t("pages._global.usage", 2)) }}</H3>
+        <Divider />
+        <H4>
+          Variants
+          <span v-if="locale !== 'en'"
+            >({{ toTitleCase(t("pages._global.variant", 2)) }})</span
+          >
+        </H4>
+        <Example lang="vue" :code="codes.variant">
+          <div
+            :class="
+              tw`flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row items-center)`
+            "
+          >
+            <ZButton>Primary</ZButton>
+            <ZButton variant="secondary">Secondary</ZButton>
+            <ZButton variant="outline">Outline</ZButton>
+            <ZButton variant="success">Success</ZButton>
+            <ZButton variant="danger">Danger</ZButton>
+            <ZButton variant="warn">Warn</ZButton>
+          </div>
+        </Example>
+      </Subgroup>
+      <Subgroup>
+        <H4>
+          Sizes
+          <span v-if="locale !== 'en'"
+            >({{ toTitleCase(t("pages._global.size", 2)) }})</span
+          >
+        </H4>
+        <Example lang="vue" :code="codes.size">
+          <div
+            :class="
+              tw`flex flex-col items-start space-y-4 md:(space-x-4 space-y-0 flex-row items-center)`
+            "
+          >
+            <ZButton size="xs">Extra Small</ZButton>
+            <ZButton size="sm">Small</ZButton>
+            <ZButton>Medium</ZButton>
+            <ZButton size="lg">Large</ZButton>
+            <ZButton size="xl">Extra Large</ZButton>
+          </div>
+        </Example>
+      </Subgroup>
+    </Group>
+    <Group>
+      <Subgroup>
+        <H3>{{ toTitleCase(t("pages._global.example", 2)) }}</H3>
+        <Divider />
+      </Subgroup>
+      <Subgroup>
+        <H4>Light Switch</H4>
+        <Example lang="vue" :code="codes.lightSwitch">
+          <ZButton @click="toggleScheme"
+            >Turn {{ isDark ? "ON" : "OFF" }} the lights</ZButton
+          >
+        </Example>
+      </Subgroup>
+      <Subgroup>
+        <H4>Button Group</H4>
+        <Example lang="vue" :code="codes.buttonGroup">
+          <ZButton
+            variant="success"
+            classRemove="rounded-md"
+            classAppend="rounded-l-md"
+            >Left Side</ZButton
+          >
+          <ZButton variant="warn" classRemove="rounded-md">Center</ZButton>
+          <ZButton
+            variant="danger"
+            classRemove="rounded-md"
+            classAppend="rounded-r-md"
+            >Right</ZButton
+          >
+        </Example>
+      </Subgroup>
+    </Group>
+    <Group>
+      <H3>{{ toTitleCase(t("pages._global.props", 2)) }}</H3>
       <TableWrapper :classAppend="{ outerWrapper: 'mt-4' }">
         <div
           :class="
@@ -158,10 +138,10 @@
               <Tr>
                 <Td>status</Td>
                 <Td>Set button status</Td>
-                <Td
-                  ><Code>disabled</Code> | <Code>loading</Code> |
-                  <Code>default</Code></Td
-                >
+                <Td>
+                  <Code>disabled</Code> | <Code>loading</Code> |
+                  <Code>default</Code>
+                </Td>
                 <Td>
                   <Code>"default"</Code>
                 </Td>
@@ -182,14 +162,9 @@
           </Table>
         </div>
       </TableWrapper>
-    </section>
-    <section>
-      <h3
-        :class="tw`font-medium text(gray-900 dark:gray-100 3xl)`"
-        id="default"
-      >
-        Default Theme
-      </h3>
+    </Group>
+    <Group>
+      <H3 id="default">Default Theme</H3>
       <p :class="tw`mt-4`">
         As always, the default theme can be
         <a :class="tw`text-shamrock hover:text-shamrock-700`" href="#"
@@ -200,7 +175,7 @@
       <div :class="tw`mt-4`">
         <CodeBlock :class="tw`rounded-lg`" :code="defaultTheme" lang="json" />
       </div>
-    </section>
+    </Group>
   </div>
 </template>
 
@@ -213,41 +188,36 @@ import { darkMode } from "@/utils/darkMode";
 import { locale } from "@utils/locale";
 import { toTitleCase } from "@utils/stringMods";
 import DocHeader from "@components-local/DocHeader.vue";
-import Badge from "@components-local/Badge.vue";
+import Blockquote from "@components-local/Blockquote.vue";
 import Divider from "@components-local/Divider.vue";
 import Example from "@components-local/Example.vue";
 import Code from "@components-local/Code.vue";
 import CodeBlock from "@components-local/CodeBlock.vue";
 import Button from "@components/Button/Button.vue";
 import Theme from "@components/Button/theme.ts";
+import { H3, H4 } from "@components-local/Heading.tsx";
+import { Group, Subgroup } from "@components-local/Group.tsx";
 
 export default defineComponent({
   components: {
     DocHeader,
+    Blockquote,
     Divider,
-    Badge,
-    ZButton: Button,
+    ZButton: Button, // Don't confuse Vue
     Example,
     Code,
     CodeBlock,
+    H3,
+    H4,
+    Group,
+    Subgroup,
   },
   setup() {
     const { t } = useI18n();
     const { isDark, toggleScheme } = darkMode();
 
     const codes = {
-      install: `
-        <template>
-          <Button>Button Text</Button>
-        </template>
-
-        <script>
-          import { Button } from "vue-zephyr/dist/esm/Button";
-          export default {
-            components: { Button }
-          };
-        <\/script>
-      `,
+      install: `import { Button } from "@usezephr/vue-zephyr";`,
       variant: `
         <Button>Primary</Button>
         <Button variant="secondary">Secondary</Button>
