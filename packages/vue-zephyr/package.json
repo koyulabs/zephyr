@@ -1,6 +1,6 @@
 {
   "name": "@usezephyr/vue-zephyr",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -36,7 +36,7 @@
   "dependencies": {
     "@headlessui/vue": "^0.2.0",
     "@twind/typography": "0.0.1",
-    "@usezephyr/theme": "^0.6.5",
+    "@usezephyr/theme": "^0.6.6",
     "clsx": "^1.1.1",
     "core-js": "^3.6.5",
     "lodash.merge": "^4.6.2",
