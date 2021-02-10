@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"name": "✨ zephyr",
+		"path": "."
+	},
+	{
+		"name": "📦 @usezephyr/react-zephyr",
+		"path": "packages/react-zephyr"
+	},
+	{
+		"name": "📦 @usezephyr/theme",
+		"path": "packages/theme"
+	},
+	{
+		"name": "📦 @usezephyr/vue-zephyr",
+		"path": "packages/vue-zephyr"
+	}
+],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+}
