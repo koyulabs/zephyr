@@ -25,11 +25,22 @@
   </nav>
 </template>
 
-<script lang="ts" setup>
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script lang="ts">
+import { defineComponent } from "vue";
 import { tw } from "twind";
 import InlineSvg from "vue-inline-svg";
 import Link from "@components-local/Link.vue";
 import LightSwitch from "@components-local/LightSwitch.vue";
 import Anchor from "@components/Anchor/Anchor.vue";
+export default defineComponent({
+  components: {
+    InlineSvg,
+    Link,
+    LightSwitch,
+    Anchor,
+  },
+  setup() {
+    return { tw };
+  },
+});
 </script>
