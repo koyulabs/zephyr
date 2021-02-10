@@ -30,7 +30,7 @@ export default defineComponent({
   setup(props) {
     const { value: theme } = computed(() => Theme(inject("userTheme", {})));
     const classes = computed(() =>
-      new Classy("italic")
+      new Classy()
         .append(theme[props.variant])
         .append(theme.size[props.size])
         .append(props.classAppend)
